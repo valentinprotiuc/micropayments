@@ -52,7 +52,7 @@
         <div class="col-sm-4">
             <h2>About Me</h2>
             <h5>My photo:</h5>
-            <img class="person" src="/pictures/DSC_0020_2.JPG">
+            <img class="person" src="/images/DSC_0020_2.JPG">
             <p>Computer science student at <a href="https://www.uni-muenster.de/de/">WWU Münster</a>.</p>
             <h3>Useful Links</h3>
             <p>Official sites of cryptos and exchange services:</p>
@@ -97,7 +97,7 @@
                 <br>
                 <p>Price:</p>
                 <button onclick="check()">
-                    <img class="stellar_paybutton" src="media/paywithstellar.jpg">
+                    <img class="stellar_paybutton" src="/images/paywithstellar.jpg">
                 </button>
             </div>
             <hr>
@@ -125,7 +125,7 @@
                 <br>
                 <p>Price:</p>
                 <button onclick="check()">
-                    <img class="stellar_paybutton" src="media/paywithstellar.jpg">
+                    <img class="stellar_paybutton" src="/images/paywithstellar.jpg">
                 </button>
             </div>
             <hr>
