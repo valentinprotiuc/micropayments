@@ -1,0 +1,17 @@
+.person {
+    height: 200px;
+    background: #aaa;
+}
+
+.pic_preview {
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.product_picture{
+    padding-bottom: 3em;
+}
+
+.stellar_paybutton{
+    height: 2em;
+}
