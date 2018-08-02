@@ -103,7 +103,7 @@ var PayWithStellar = (function(){
             if(!json || json.error) {
                 PayWithStellar.ready = false;
                 state.ready = false;
-                alert('Internet connection error.\nPayments are suspended');
+                alert('Internet connection error.\nStellar payments are suspended');
                 return;
             }
             PayWithStellar.ready = true;
