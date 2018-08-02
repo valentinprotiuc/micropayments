@@ -41,7 +41,9 @@ function check(event) {
 
 function check2() {
     console.log("stage1");
-    $.get("/");
+    $.get("/", function () {
+        console.log("stage2");
+    });
 
 }
 
