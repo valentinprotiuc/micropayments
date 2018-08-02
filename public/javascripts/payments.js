@@ -18,9 +18,7 @@ function check(paySystem) {
     var orderId = "";
     if ($('input[name=optradio]:checked').length > 0) {
         orderId = $('input[name=optradio]:checked').attr('id');
-
-        window.location.href = 'pictures/'+orderId+'.jpg';
-        //PayWithStellar.payment(event, 0.044, orderId);
+        PayWithStellar.payment(event, 0.044, orderId);
     } else {
         alert('You did not select anything to buy.');
     }
