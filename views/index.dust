@@ -99,7 +99,7 @@
                 <button onclick="check()">
                     <img class="stellar_paybutton" src="/images/pay_with_iota.png">
                 </button>
-                <button onclick="PayWithStellar.payment(event, 0.01, orderId)">
+                <button onclick="PayWithStellar.payment(event, 0.01, "numbers")">
                     <img class="stellar_paybutton" src="/images/paywithstellar.jpg">
                 </button>
             </div>
@@ -130,7 +130,7 @@
                 <button onclick="check()">
                     <img class="stellar_paybutton" src="/images/pay_with_iota.png">
                 </button>
-                <button onclick="PayWithStellar.payment(event, 0.01, orderId)">
+                <button onclick="PayWithStellar.payment(event, 0.01, "numbers")">
                     <img class="stellar_paybutton" src="/images/paywithstellar.jpg">
                 </button>
             </div>
@@ -161,7 +161,7 @@
                 <button onclick="check()">
                     <img class="stellar_paybutton" src="/images/pay_with_iota.png">
                 </button>
-                <button onclick="PayWithStellar.payment(event, 0.01, orderId)">
+                <button onclick="PayWithStellar.payment(event, 0.01, "numbers")">
                     <img class="stellar_paybutton" src="/images/paywithstellar.jpg">
                 </button>
             </div>
