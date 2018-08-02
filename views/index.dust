@@ -16,9 +16,9 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script src="/javascript/stellar-sdk.js"></script>
-    <script src="/javascript/paywithstellar.js"></script>
-    <script src="/javascript/payments.js"></script>
+    <script src="/javascripts/stellar-sdk.js"></script>
+    <script src="/javascripts/paywithstellar.js"></script>
+    <script src="/javascripts/payments.js"></script>
     <link rel="stylesheet" href="/stylesheets/main.css">
 </head>
 <body>
