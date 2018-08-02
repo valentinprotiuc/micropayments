@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
         'Content-Type': 'picture/jpg',
         'Content-Disposition': 'attachment; filename=blue_small.jpg',
     });
-    res.sendFile(path.join(__dirname, '../pictures' , 'blue_small.jpg'));
+    res.download(path.join(__dirname, '../pictures' , 'blue_small.jpg'));
 });
 
 module.exports = router;

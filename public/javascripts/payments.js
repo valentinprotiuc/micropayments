@@ -41,9 +41,11 @@ function check(event) {
 
 function check2() {
     console.log("stage1");
+    window.open('/pictures/');
+    /*
     $.get("/pictures/", function () {
         console.log("stage2");
-    });
+    });*/
 
 }
 
