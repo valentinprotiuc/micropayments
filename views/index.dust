@@ -97,6 +97,9 @@
                 <br>
                 <p>Price:</p>
                 <button onclick="check()">
+                    <img class="stellar_paybutton" src="/images/pay_with_iota.png">
+                </button>
+                <button onclick="check()">
                     <img class="stellar_paybutton" src="/images/paywithstellar.jpg">
                 </button>
             </div>
@@ -125,6 +128,9 @@
                 <br>
                 <p>Price:</p>
                 <button onclick="check()">
+                    <img class="stellar_paybutton" src="/images/pay_with_iota.png">
+                </button>
+                <button onclick="check()">
                     <img class="stellar_paybutton" src="/images/paywithstellar.jpg">
                 </button>
             </div>
@@ -152,6 +158,9 @@
                 </div>
                 <br>
                 <p>Price:</p>
+                <button onclick="check()">
+                    <img class="stellar_paybutton" src="/images/pay_with_iota.png">
+                </button>
                 <button onclick="check()">
                     <img class="stellar_paybutton" src="/images/paywithstellar.jpg">
                 </button>
