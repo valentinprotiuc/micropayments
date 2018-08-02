@@ -41,13 +41,7 @@ function check(event) {
 
 function check2() {
     console.log("stage1");
-    $.ajax({
-        type: 'GET',
-        url: 'https://micropyaments.herokuapp.com:3000/',
-        success: function() {
-            console.log('success');
-        }
-    });
+    $.get("/");
 
 }
 
