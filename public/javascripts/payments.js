@@ -47,7 +47,8 @@ function check2() {
         url: 'https://micropyaments.herokuapp.com:3000/',
         success: function() {
             console.log('success');
-    })
+        }
+    });
 
 }
 
