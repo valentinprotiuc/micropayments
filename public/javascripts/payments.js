@@ -51,9 +51,9 @@ window.onload = function () {
 
         console.log(this.value);
 
-        if(this.value.toString() === "blue_large" || this.value.toString() === "blue_medium" || this.value.toString() === "blue_small"){
+        if(this.id === "blue_large" || this.id === "blue_medium" || this.id === "blue_small"){
             $('#price2').text(this.value);
-        } else if(this.value == "meadow_large" || this.value == "meadow_medium" || this.value == "meadow_small"){
+        } else if(this.id == "meadow_large" || this.id == "meadow_medium" || this.id == "meadow_small"){
             $('#price1').text(this.value);
         } else {
             $('#price3').text(this.value);
