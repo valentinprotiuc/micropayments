@@ -49,6 +49,8 @@ window.onload = function () {
     };
     $('input[type=radio]').click(function(){
 
+        console.log(this.value);
+
         if(this.value.toString() === "blue_large" || this.value.toString() === "blue_medium" || this.value.toString() === "blue_small"){
             $('#price2').text(this.value);
         } else if(this.value == "meadow_large" || this.value == "meadow_medium" || this.value == "meadow_small"){
