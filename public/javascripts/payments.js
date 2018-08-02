@@ -22,7 +22,7 @@ function check(event) {
 
     if ($('input[name=optradio]:checked').length > 0) {
         orderId = $('input[name=optradio]:checked').attr('id');
-        price = parseInt($('input[name=optradio]:checked').attr('value'));
+        price = parseFloat($('input[name=optradio]:checked').attr('value'));
         PayWithStellar.payment(event, price, orderId);
     } else {
         alert('You did not select anything to buy.');
