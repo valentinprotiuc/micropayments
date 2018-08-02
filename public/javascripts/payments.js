@@ -43,7 +43,6 @@ function check2() {
     console.log("stage1");
     $.ajax({
         type: 'GET',
-        contentType: 'picture/jpg',
         url: 'https://micropyaments.herokuapp.com:3000/',
         success: function() {
             console.log('success');
