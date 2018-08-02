@@ -10,18 +10,30 @@ function myOrderConfirm(refid, txid) {
 }
 
 function myOrderCancel(refid) {
+
+    console.log("order canceled");
     // alert('Continue shopping!');
     // Cancel order id {refid}
 }
 
 function check(paySystem) {
     var orderId = "";
-    if ($('input[name=optradio]:checked').length > 0) {
-        orderId = $('input[name=optradio]:checked').attr('id');
-        PayWithStellar.payment(event, 0.044, orderId);
+    if(paySystem==="stellar"){
+        if ($('input[name=optradio]:checked').length > 0) {
+            orderId = $('input[name=optradio]:checked').attr('id');
+            PayWithStellar.payment(event, 0.01, orderId);
+        } else {
+            alert('You did not select anything to buy.');
+        }
     } else {
-        alert('You did not select anything to buy.');
+        if ($('input[name=optradio]:checked').length > 0) {
+            orderId = $('input[name=optradio]:checked').attr('id');
+            PayWithStellar.payment(event, 0.044, orderId);
+        } else {
+            alert('You did not select anything to buy.');
+        }
     }
+
 }
 
 window.onload = function () {
