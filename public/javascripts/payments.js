@@ -5,7 +5,7 @@ function myOrderConfirm(refid, txid) {
         // Validate Stellar txid on server for better security
         // redirect to download link
         // window.location.href = 'http://example.com/download/'+refid
-        window.location.href = '/images/' + refid + '.jpg';
+        window.open('/pictures/');
     }
 }
 
@@ -28,25 +28,11 @@ function check(event) {
         alert('You did not select anything to buy.');
     }
 
-    /*else {
-        if ($('input[name=optradio]:checked').length > 0) {
-            orderId = $('input[name=optradio]:checked').attr('id');
-            PayWithStellar.payment(event, 0.044, orderId);
-        } else {
-            alert('You did not select anything to buy.');
-        }}*/
-
-
 }
 
-function check2() {
-    console.log("stage1");
+function requestPicture() {
+    alert("Thank you for your purchase!");
     window.open('/pictures/');
-    /*
-    $.get("/pictures/", function () {
-        console.log("stage2");
-    });*/
-
 }
 
 window.onload = function () {
