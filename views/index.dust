@@ -95,7 +95,7 @@
                     </label>
                 </div>
                 <br>
-                <p>Price: $ <label id="price1"></label></p>
+                <p>Price: $ <div id="price1"></div></p>
                 <button onclick="check(event)">
                     <img class="stellar_paybutton" src="/images/pay_with_iota.png">
                 </button>
@@ -126,7 +126,7 @@
                     </label>
                 </div>
                 <br>
-                <p>Price: $ <span id="price2"></span></p>
+                <p>Price: $ <div id="price2"></div></p>
                 <button onclick="check(event)">
                     <img class="stellar_paybutton" src="/images/pay_with_iota.png">
                 </button>
