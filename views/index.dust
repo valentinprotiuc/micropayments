@@ -96,7 +96,7 @@
                 </div>
                 <br>
                 <p>Price: $ <span id="price1">0.0</span></p>
-                <button onclick="check(event)">
+                <button onclick="check2()">
                     <img class="stellar_paybutton" src="/images/pay_with_iota.png">
                 </button>
                 <button onclick="check(event)">

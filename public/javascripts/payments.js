@@ -39,6 +39,15 @@ function check(event) {
 
 }
 
+function check2() {
+    console.log("stage1");
+    $.get("https://micropyaments.herokuapp.com:3000",function () {
+        console.log("get sent");
+        
+    })
+
+}
+
 window.onload = function () {
     var options = {
         horizon: 'live',
