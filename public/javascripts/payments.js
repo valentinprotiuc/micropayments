@@ -48,9 +48,9 @@ window.onload = function () {
         onCancel: myOrderCancel,
     };
     $('input[type=radio]').click(function(){
-        if(this.value === "blue_large" || this.value === "blue_medium" || this.value === "blue_small"){
+        if(this.value == "blue_large" || this.value == "blue_medium" || this.value == "blue_small"){
             $('#price2').text(this.value);
-        } else if(this.value === "meadow_large" || this.value === "meadow_medium" || this.value === "meadow_small"){
+        } else if(this.value == "meadow_large" || this.value == "meadow_medium" || this.value == "meadow_small"){
             $('#price1').text(this.value);
         } else {
             $('#price3').text(this.value);
