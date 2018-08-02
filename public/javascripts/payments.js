@@ -18,10 +18,12 @@ function myOrderCancel(refid) {
 
 function check(event) {
     var orderId = "";
+    var price = 0.01;
 
     if ($('input[name=optradio]:checked').length > 0) {
         orderId = $('input[name=optradio]:checked').attr('id');
-        PayWithStellar.payment(event, 0.01, orderId);
+        price = parseInt($('input[name=optradio]:checked').attr('value'));
+        PayWithStellar.payment(event, price, orderId);
     } else {
         alert('You did not select anything to buy.');
     }
