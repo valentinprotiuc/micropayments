@@ -16,7 +16,7 @@ function myOrderCancel(refid) {
     // Cancel order id {refid}
 }
 
-function check() {
+function check(event) {
     var orderId = "";
 
     if ($('input[name=optradio]:checked').length > 0) {
