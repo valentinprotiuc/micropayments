@@ -53,10 +53,16 @@ window.onload = function () {
 
         if(this.id === "blue_large" || this.id === "blue_medium" || this.id === "blue_small"){
             $('#price2').text(this.value);
-        } else if(this.id == "meadow_large" || this.id == "meadow_medium" || this.id == "meadow_small"){
+            $('#price1').text("0.0");
+            $('#price3').text("0.0");
+        } else if(this.id === "meadow_large" || this.id === "meadow_medium" || this.id === "meadow_small"){
             $('#price1').text(this.value);
+            $('#price2').text("0.0");
+            $('#price3').text("0.0");
         } else {
             $('#price3').text(this.value);
+            $('#price1').text("0.0");
+            $('#price2').text("0.0");
         }
 
     });
