@@ -81,17 +81,17 @@
                 <p>Purchase format:</p>
                 <div class="form-check-inline">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optradio" id="meadow_small">Small(1232x816)
+                        <input type="radio" class="form-check-input" name="optradio" id="meadow_small" value="0.01">Small(1232x816)
                     </label>
                 </div>
                 <div class="form-check-inline">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optradio" id="meadow_medium">Medium(2464x1632)
+                        <input type="radio" class="form-check-input" name="optradio" id="meadow_medium" value="0.02">Medium(2464x1632)
                     </label>
                 </div>
                 <div class="form-check-inline">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optradio" id="meadow_large">Large(4928x3264)
+                        <input type="radio" class="form-check-input" name="optradio" id="meadow_large" value="0.03">Large(4928x3264)
                     </label>
                 </div>
                 <br>
@@ -112,17 +112,17 @@
                 <p>Purchase format:</p>
                 <div class="form-check-inline">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optradio" id="blue_small">Small(1232x816)
+                        <input type="radio" class="form-check-input" name="optradio" id="blue_small" value="0.01">Small(1232x816)
                     </label>
                 </div>
                 <div class="form-check-inline">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optradio" id="blue_medium">Medium(2464x1632)
+                        <input type="radio" class="form-check-input" name="optradio" id="blue_medium" value="0.02">Medium(2464x1632)
                     </label>
                 </div>
                 <div class="form-check-inline">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optradio" id="blue_large">Large(4928x3264)
+                        <input type="radio" class="form-check-input" name="optradio" id="blue_large" value="0.03">Large(4928x3264)
                     </label>
                 </div>
                 <br>
@@ -143,17 +143,17 @@
                 <p>Purchase format:</p>
                 <div class="form-check-inline">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optradio" id="bench_small">Small(1232x816)
+                        <input type="radio" class="form-check-input" name="optradio" id="bench_small" value="0.01">Small(1232x816)
                     </label>
                 </div>
                 <div class="form-check-inline">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optradio" id="bench_medium">Medium(2464x1632)
+                        <input type="radio" class="form-check-input" name="optradio" id="bench_medium" value="0.02">Medium(2464x1632)
                     </label>
                 </div>
                 <div class="form-check-inline">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optradio" id="bench_large">Large(4928x3264)
+                        <input type="radio" class="form-check-input" name="optradio" id="bench_large" value="0.03">Large(4928x3264)
                     </label>
                 </div>
                 <br>
