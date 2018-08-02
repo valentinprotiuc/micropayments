@@ -48,7 +48,7 @@ window.onload = function () {
         onCancel: myOrderCancel,
     };
     $('input[type=radio]').click(function(){
-        alert(this.value);
+        $('#price1').text(this.value);
     });
     PayWithStellar.main(options);
 };
