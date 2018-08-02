@@ -5,7 +5,7 @@ function myOrderConfirm(refid, txid) {
         // Validate Stellar txid on server for better security
         // redirect to download link
         // window.location.href = 'http://example.com/download/'+refid
-        window.location.href = 'pictures/' + refid + '.jpg';
+        window.location.href = '/images/' + refid + '.jpg';
     }
 }
 
