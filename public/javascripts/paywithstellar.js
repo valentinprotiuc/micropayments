@@ -41,7 +41,7 @@ var PayWithStellar = (function(){
         state.refid  = refid;
         var event    = event || window.event
         var source   = event.target;
-        var calc     = Math.round(state.amount / state.priceFiat / state.priceUsd); 
+        var calc     = state.amount / state.priceFiat / state.priceUsd;
         var total    = money(calc, calc<1?4:2);
         console.log(state.amount, state.priceFiat, state.priceUsd, calc, total); 
         var memo     = escape(refid); // unescape on client
