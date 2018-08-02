@@ -14,7 +14,7 @@ function myOrderCancel(refid) {
     // Cancel order id {refid}
 }
 
-function check() {
+function check(paySystem) {
     var orderId = "";
     if ($('input[name=optradio]:checked').length > 0) {
         orderId = $('input[name=optradio]:checked').attr('id');
