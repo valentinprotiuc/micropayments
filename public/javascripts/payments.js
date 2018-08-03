@@ -1,38 +1,46 @@
+function requestPicture(refid) {
+    alert('Thank you for your purchase!\nOrder ID: ' + refid);
+    var reqUrl = '/pictures/' + refid;
+    window.open(reqUrl);
+}
+
+
 function myOrderConfirm(refid, txid) {
     if (PayWithStellar.lastOrder() == refid) {
-        alert('Thank you for your purchase!\nOrder ID: ' + refid);
-        // Confirmed order id {refid}
-        // Validate Stellar txid on server for better security
-        // redirect to download link
-        // window.location.href = 'http://example.com/download/'+refid
-        window.open('/pictures/');
+
+       requestPicture(refid);
     }
 }
 
 function myOrderCancel(refid) {
 
     console.log("order canceled");
-    // alert('Continue shopping!');
-    // Cancel order id {refid}
+    alert('Unfortunately your order has been canceled.');
 }
 
 function check(event) {
     var orderId = "";
     var price = 0.01;
-
-    if ($('input[name=optradio]:checked').length > 0) {
-        orderId = $('input[name=optradio]:checked').attr('id');
-        price = parseFloat($('input[name=optradio]:checked').attr('value'));
-        PayWithStellar.payment(event, price, orderId);
-    } else {
-        alert('You did not select anything to buy.');
+    var paySys = event.target.className;
+    if(paySys === 'stellar') {
+        if ($('input[name=optradio]:checked').length > 0) {
+            orderId = $('input[name=optradio]:checked').attr('id');
+            price = parseFloat($('input[name=optradio]:checked').attr('value'));
+            PayWithStellar.payment(event, price, orderId);
+        } else {
+            alert('You did not select anything to buy.');
+        }
+    }else {
+        if ($('input[name=optradio]:checked').length > 0) {
+            orderId = $('input[name=optradio]:checked').attr('id');
+            requestPicture(orderId);
+        } else {
+            alert('You did not select anything to buy.');
+        }
     }
 
-}
 
-function requestPicture() {
-    alert("Thank you for your purchase!");
-    window.open('/pictures/');
+
 }
 
 window.onload = function () {

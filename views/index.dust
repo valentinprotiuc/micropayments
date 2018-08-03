@@ -96,11 +96,11 @@
                 </div>
                 <br>
                 <p>Price: $ <span id="price1">0.0</span></p>
-                <button onclick="requestPicture()">
-                    <img class="stellar_paybutton" src="/images/pay_with_iota.png">
+                <button class="payIota" onclick="check(event)">
+                    <img class="paybutton" src="/images/pay_with_iota.png">
                 </button>
-                <button onclick="check(event)">
-                    <img class="stellar_paybutton" src="/images/paywithstellar.jpg">
+                <button class="payStellar" onclick="check(event)">
+                    <img class="paybutton" src="/images/paywithstellar.jpg">
                 </button>
             </div>
             <hr>
@@ -127,11 +127,11 @@
                 </div>
                 <br>
                 <p>Price: $ <span id="price2">0.0</span></p>
-                <button onclick="check(event)">
-                    <img class="stellar_paybutton" src="/images/pay_with_iota.png">
+                <button class="payIota" onclick="check(event)">
+                    <img class="paybutton" src="/images/pay_with_iota.png">
                 </button>
-                <button onclick="check(event)">
-                    <img class="stellar_paybutton" src="/images/paywithstellar.jpg">
+                <button class="payStellar" onclick="check(event)">
+                    <img class="paybutton" src="/images/paywithstellar.jpg">
                 </button>
             </div>
             <hr>
@@ -158,11 +158,11 @@
                 </div>
                 <br>
                 <p>Price: $ <span id="price3">0.0</span></p>
-                <button onclick="check(event)">
-                    <img class="stellar_paybutton" src="/images/pay_with_iota.png">
+                <button class="payIota" onclick="check(event)">
+                    <img class="paybutton" src="/images/pay_with_iota.png">
                 </button>
-                <button onclick="check(event)">
-                    <img class="stellar_paybutton" src="/images/paywithstellar.jpg">
+                <button class="payStellar" onclick="check(event)">
+                    <img class="paybutton" src="/images/paywithstellar.jpg">
                 </button>
             </div>
             <hr>
