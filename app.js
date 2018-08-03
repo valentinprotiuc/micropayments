@@ -7,6 +7,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var picturesRouter = require('./routes/pictures');
+var iotapaymentRouter = require('./routes/iotapayment');
 
 var app = express();
 
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/pictures/', picturesRouter);
+app.use('/iotapayment/', iotapaymentRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
