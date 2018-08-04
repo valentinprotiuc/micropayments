@@ -179,8 +179,7 @@
             <h4 class="modal-title">IOTA payment details</h4>
           </div>
           <div class="modal-body">
-            <p>Please send payment of <span id="iotaPrice"></span> IOTA to the address below and include the following code in the memo field:
-            <span id="iotaConfId"></span> </p>
+            <p>Please send payment of <span id="iotaPrice"></span> IOTA to the address below and include the following code as a message: <span id="iotaConfId"></span> </p>
             <br>
             <span class="payAddress" id="iotaAddress"></span>
             <div class="qrdiv" id="qr"></div>
