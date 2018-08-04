@@ -168,6 +168,32 @@
             <hr>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">IOTA payment details</h4>
+          </div>
+          <div class="modal-body">
+            <p>Please send payment of <span id="iotaPrice"></span> IOTA to the address below and include the following code in the memo field:
+            <span id="iotaConfId"></span> </p>
+            <br>
+            <span class="payAddress" id="iotaAddress"></span>
+            <div class="qrdiv" id="qr"></div>
+            <br>
+            <p>Note that payments with IOTA take usually up to 2 minutes. After payment is sent, please wait for confirmation.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
 </div>
 
 <div class="jumbotron text-center" style="margin-bottom:0">

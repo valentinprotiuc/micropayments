@@ -39,7 +39,7 @@ var PayWithStellar = (function(){
         if(already) { hideModal(); return; }
         state.amount = amount;
         state.refid  = refid;
-        var event    = event || window.event
+        var event    = event || window.event;
         var source   = event.target;
         var calc     = state.amount / state.priceFiat / state.priceUsd;
         var total    = money(calc, calc<1?4:2);
