@@ -5,8 +5,23 @@ var payments = [];
 /* Receives GET requests from the front-end and waits for confirmation */
 router.get('/:address', function (req, res) {
 
-    while(!payments.includes(req.address)){}
-    res.send(true);
+    var cancelRequest = false;
+
+    req.on('close', function (err){
+        cancelRequest = true;
+    });
+
+    //Waiting function for the confirmation
+    function check(){
+        setTimeout(function () {
+            if(payments.includes(req.params.address)){
+                res.send(true);
+            } else if(cancelRequest === false) {
+                check();
+            }
+        },500);
+    }
+    check();
 
 });
 

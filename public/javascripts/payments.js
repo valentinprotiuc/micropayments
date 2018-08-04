@@ -1,23 +1,35 @@
+var currentReq;
 
 function requestPicture(refId) {
-    alert('Thank you for your purchase!\nOrder ID: ' + refid);
+    alert('Thank you for your purchase!\nOrder ID: ' + refId);
     var reqUrl = '/pictures/' + refId;
     window.open(reqUrl);
 }
 
 function requestConfirmation(address, refId) {
     var reqUrl = "/ipn/" + address;
-    $.get(reqUrl, function (res) {
-        if(res){
-            $('#myModal').modal().hide();
+    currentReq = $.ajax({
+        url: reqUrl,
+        beforeSend : function()    {
+            if(currentReq != null) {
+                currentReq.abort();
+            }
+        },
+        success: function () {
+            $('#myModal').modal('toggle');
             requestPicture(refId);
         }
     });
 }
 
+function abortCurrentReq(){
+    currentReq.abort();
+}
+
+
 function createInvoiceIota(price, refId) {
     console.log('creating invoice');
-    var reqUrl = "/iotapayment/" + refId + "." + price;
+    var reqUrl = "/iotapayment/" + refId + "-" + price;
 
     //Request for invoice creation
    $.get(reqUrl , function (res) {
@@ -33,7 +45,6 @@ function createInvoiceIota(price, refId) {
        
        //Request for a confirmation of the payment
        requestConfirmation(paymentAddress, refId);
-
    }, 'json');
 }
 

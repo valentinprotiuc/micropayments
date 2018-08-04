@@ -3,8 +3,7 @@ var request = require('request');
 var router = express.Router();
 
 /* GET pictures. */
-router.get('/:picId.:price', function (req, res, next) {
-    console.log('got a request');
+router.get('/:picId-:price', function (req, res, next) {
     var fiatPrice = req.params.price;
     var customStr = req.params.picId;
 
@@ -19,14 +18,10 @@ router.get('/:picId.:price', function (req, res, next) {
     }, function (err, httpResponse, body) {
         if(err === null){
             res.send(body);
-            console.log('body: ', body);
-
         } else {
             res.send('sorry, error');
         }
     });
-
-
 
 });
 
