@@ -29,11 +29,11 @@
       <file leaf-file-name="payments.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/payments.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+            <state relative-caret-position="414">
+              <caret line="26" column="63" lean-forward="false" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
               <folding>
-                <marker date="1533572837924" expanded="true" signature="23297:23331" ph="..." />
-                <marker date="1533572837924" expanded="true" signature="23420:23564" ph="..." />
+                <marker date="1533573124144" expanded="true" signature="23450:23484" ph="..." />
+                <marker date="1533573124144" expanded="true" signature="23573:23717" ph="..." />
               </folding>
             </state>
           </provider>
@@ -273,12 +273,12 @@
       <workItem from="1533285363290" duration="15402000" />
       <workItem from="1533306047783" duration="359000" />
       <workItem from="1533368412579" duration="23011000" />
-      <workItem from="1533546249378" duration="18379000" />
+      <workItem from="1533546249378" duration="18660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82345000" />
+    <option name="totallyTimeSpent" value="82626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="292" y="24" width="1857" height="1055" extended-state="6" />
@@ -338,8 +338,8 @@
         <state relative-caret-position="828">
           <caret line="46" column="50" lean-forward="false" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
           <folding>
-            <marker date="1533572837924" expanded="true" signature="23297:23331" ph="..." />
-            <marker date="1533572837924" expanded="true" signature="23420:23564" ph="..." />
+            <marker date="1533573124144" expanded="true" signature="23450:23484" ph="..." />
+            <marker date="1533573124144" expanded="true" signature="23573:23717" ph="..." />
           </folding>
         </state>
       </provider>
@@ -424,8 +424,8 @@
         <state relative-caret-position="288">
           <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
           <folding>
-            <marker date="1533572837924" expanded="true" signature="23297:23331" ph="..." />
-            <marker date="1533572837924" expanded="true" signature="23420:23564" ph="..." />
+            <marker date="1533573124144" expanded="true" signature="23450:23484" ph="..." />
+            <marker date="1533573124144" expanded="true" signature="23573:23717" ph="..." />
           </folding>
         </state>
       </provider>
@@ -502,8 +502,8 @@
         <state relative-caret-position="288">
           <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
           <folding>
-            <marker date="1533572837924" expanded="true" signature="23297:23331" ph="..." />
-            <marker date="1533572837924" expanded="true" signature="23420:23564" ph="..." />
+            <marker date="1533573124144" expanded="true" signature="23450:23484" ph="..." />
+            <marker date="1533573124144" expanded="true" signature="23573:23717" ph="..." />
           </folding>
         </state>
       </provider>
@@ -572,8 +572,8 @@
         <state relative-caret-position="252">
           <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
           <folding>
-            <marker date="1533572837924" expanded="true" signature="23297:23331" ph="..." />
-            <marker date="1533572837924" expanded="true" signature="23420:23564" ph="..." />
+            <marker date="1533573124144" expanded="true" signature="23450:23484" ph="..." />
+            <marker date="1533573124144" expanded="true" signature="23573:23717" ph="..." />
           </folding>
         </state>
       </provider>
@@ -729,11 +729,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/payments.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="414">
+          <caret line="26" column="63" lean-forward="false" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
           <folding>
-            <marker date="1533572837924" expanded="true" signature="23297:23331" ph="..." />
-            <marker date="1533572837924" expanded="true" signature="23420:23564" ph="..." />
+            <marker date="1533573124144" expanded="true" signature="23450:23484" ph="..." />
+            <marker date="1533573124144" expanded="true" signature="23573:23717" ph="..." />
           </folding>
         </state>
       </provider>

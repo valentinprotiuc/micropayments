@@ -23,9 +23,13 @@ function requestConfirmation(address, refId, iotaPrice) {
             requestPicture(refId);
         },
         error: function (r,s,e) {
-            console.log(e);
-            $('#myModal').modal('toggle');
-            myOrderCancel(refId);
+            if(e == 'Service Unavailable'){
+                requestConfirmation(address, refId, iotaPrice);
+            }else{
+                console.log(e);
+                $('#myModal').modal('toggle');
+                myOrderCancel(refId);
+            }
         }
     });
 }
