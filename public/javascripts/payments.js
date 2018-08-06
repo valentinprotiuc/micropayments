@@ -22,7 +22,8 @@ function requestConfirmation(address, refId, iotaPrice) {
             $('#myModal').modal('toggle');
             requestPicture(refId);
         },
-        error: function () {
+        error: function (e) {
+            console.log(e);
             $('#myModal').modal('toggle');
             myOrderCancel(refId);
         }
@@ -49,8 +50,6 @@ function createInvoiceIota(price, refId) {
        $('#myModal').modal({
            backdrop: 'static'
        });
-       
-       //Request for a confirmation of the payment
        requestConfirmation(paymentAddress, refId, iotaPrice);
    }, 'json');
 }
@@ -113,6 +112,7 @@ window.onload = function () {
         }
 
     });
+
     PayWithStellar.main(options);
 };
 
