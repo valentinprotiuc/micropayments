@@ -26,7 +26,7 @@ function requestConfirmation(address, refId, iotaPrice) {
             if(e == 'Service Unavailable'){
                 requestConfirmation(address, refId, iotaPrice);
             }else{
-                console.log(e);
+
                 $('#myModal').modal('toggle');
                 myOrderCancel(refId);
             }
@@ -67,7 +67,6 @@ function myOrderConfirm(refid, txid) {
 }
 
 function myOrderCancel() {
-
     alert('Order canceled.');
 }
 
