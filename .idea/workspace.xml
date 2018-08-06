@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2c575e5-900b-4a54-b240-29eb7d3f90ff" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/views/index.dust" afterPath="$PROJECT_DIR$/views/index.dust" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,8 +20,8 @@
       <file leaf-file-name="index.dust" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.dust">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="195" column="62" lean-forward="false" selection-start-line="195" selection-start-column="62" selection-end-line="195" selection-end-column="62" />
+            <state relative-caret-position="396">
+              <caret line="52" column="16" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -52,7 +53,7 @@
       <file leaf-file-name="ipn.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/ipn.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
+            <state relative-caret-position="414">
               <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="7" />
               <folding />
             </state>
@@ -178,6 +179,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -217,7 +219,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -274,12 +275,13 @@
       <workItem from="1533306047783" duration="359000" />
       <workItem from="1533368412579" duration="23011000" />
       <workItem from="1533546249378" duration="19370000" />
-      <workItem from="1533574340829" duration="619000" />
+      <workItem from="1533574340829" duration="663000" />
+      <workItem from="1533575083797" duration="588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83955000" />
+    <option name="totallyTimeSpent" value="84587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="292" y="24" width="1857" height="1055" extended-state="6" />
@@ -710,7 +712,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/ipn.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
+        <state relative-caret-position="414">
           <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="7" />
           <folding />
         </state>
@@ -718,8 +720,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.dust">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="195" column="62" lean-forward="false" selection-start-line="195" selection-start-column="62" selection-end-line="195" selection-end-column="62" />
+        <state relative-caret-position="396">
+          <caret line="52" column="16" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
           <folding />
         </state>
       </provider>

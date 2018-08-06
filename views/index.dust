@@ -48,16 +48,17 @@
             <h5>My photo:</h5>
             <img class="person" src="/images/DSC_0020_2.JPG">
             <p>Computer science student at <a href="https://www.uni-muenster.de/de/">WWU Münster</a>.</p>
-            <br>
+
             <p>My GitHub <a href="https://github.com/valentinprotiuc">profile</a>.</p>
+            <br>
             <h3>Useful Links</h3>
-            <p>Official sites of cryptos and exchange services:</p>
+            <p>Exchange services:</p>
             <ul class="nav nav-pills flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.iota.org/">IOTA</a>
+                    <a class="nav-link" href="https://coinfalcon.com/">Coinfalcon</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.stellar.org/">Stellar</a>
+                    <a class="nav-link" href="https://anycoindirect.eu/">Anycoin Direct</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://changelly.com/">Changelly</a>
@@ -66,6 +67,22 @@
                     <a class="nav-link" href="https://www.bitfinex.com/">Bitfinex</a>
                 </li>
             </ul>
+            <p>Pages of cryptocurrencies and transaction search tools:</p>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.iota.org/">IOTA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.stellar.org/">Stellar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://iotasear.ch/">IOTA Tangle Explorer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://stellarchain.io/">StellarChain</a>
+                </li>
+            </ul>
+
             <hr class="d-sm-none">
         </div>
         <div class="col-sm-8">
