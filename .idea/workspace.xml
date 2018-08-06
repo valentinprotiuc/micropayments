@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e2c575e5-900b-4a54-b240-29eb7d3f90ff" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/payments.js" afterPath="$PROJECT_DIR$/public/javascripts/payments.js" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/paywithstellar.js" afterPath="$PROJECT_DIR$/public/javascripts/paywithstellar.js" />
       <change beforePath="$PROJECT_DIR$/routes/iotapayment.js" afterPath="$PROJECT_DIR$/routes/iotapayment.js" />
       <change beforePath="$PROJECT_DIR$/routes/ipn.js" afterPath="$PROJECT_DIR$/routes/ipn.js" />
-      <change beforePath="$PROJECT_DIR$/views/index.dust" afterPath="$PROJECT_DIR$/views/index.dust" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +22,7 @@
       <file leaf-file-name="index.dust" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.dust">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
+            <state relative-caret-position="0">
               <caret line="189" column="105" lean-forward="false" selection-start-line="189" selection-start-column="105" selection-end-line="189" selection-end-column="105" />
               <folding />
             </state>
@@ -43,7 +42,7 @@
       <file leaf-file-name="payments.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/payments.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
+            <state relative-caret-position="18">
               <caret line="46" column="50" lean-forward="false" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
               <folding>
                 <marker date="1533390115603" expanded="true" signature="23298:23332" ph="..." />
@@ -53,34 +52,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="iotapayment.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="iotapayment.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/iotapayment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+            <state relative-caret-position="108">
+              <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="paywithstellar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/paywithstellar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1151">
-              <caret line="250" column="15" lean-forward="false" selection-start-line="250" selection-start-column="11" selection-end-line="250" selection-end-column="15" />
-              <folding>
-                <marker date="1533301958417" expanded="true" signature="40778:40812" ph="..." />
-                <marker date="1533301958417" expanded="true" signature="40885:41029" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ipn.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ipn.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/ipn.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="630">
+              <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -157,13 +143,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/routes/pictures.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/paywithstellar.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/index.dust" />
-        <option value="$PROJECT_DIR$/routes/iotapayment.js" />
         <option value="$PROJECT_DIR$/public/javascripts/payments.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/paywithstellar.js" />
         <option value="$PROJECT_DIR$/routes/ipn.js" />
+        <option value="$PROJECT_DIR$/routes/iotapayment.js" />
       </list>
     </option>
   </component>
@@ -205,8 +191,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,6 +229,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -299,12 +285,13 @@
       <workItem from="1533225873763" duration="25194000" />
       <workItem from="1533285363290" duration="15402000" />
       <workItem from="1533306047783" duration="359000" />
-      <workItem from="1533368412579" duration="19973000" />
+      <workItem from="1533368412579" duration="23011000" />
+      <workItem from="1533546249378" duration="1285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60928000" />
+    <option name="totallyTimeSpent" value="65251000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="292" y="24" width="1857" height="1055" extended-state="6" />
@@ -345,6 +332,92 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/views/index.dust">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3402">
+          <caret line="189" column="105" lean-forward="false" selection-start-line="189" selection-start-column="105" selection-end-line="189" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/payments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="46" column="50" lean-forward="false" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+          <folding>
+            <marker date="1533390115603" expanded="true" signature="23298:23332" ph="..." />
+            <marker date="1533390115603" expanded="true" signature="23421:23565" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/iotapayment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/ipn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/pictures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/paywithstellar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3042">
+          <caret line="169" column="0" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+          <folding>
+            <marker date="1533461159292" expanded="true" signature="40801:40835" ph="..." />
+            <marker date="1533461159292" expanded="true" signature="40908:41052" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.dust">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -383,8 +456,8 @@
         <state relative-caret-position="738">
           <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
           <folding>
-            <marker date="1533301958417" expanded="true" signature="40778:40812" ph="..." />
-            <marker date="1533301958417" expanded="true" signature="40885:41029" ph="..." />
+            <marker date="1533461159292" expanded="true" signature="40801:40835" ph="..." />
+            <marker date="1533461159292" expanded="true" signature="40908:41052" ph="..." />
           </folding>
         </state>
       </provider>
@@ -461,8 +534,8 @@
         <state relative-caret-position="738">
           <caret line="41" column="45" lean-forward="true" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
           <folding>
-            <marker date="1533301958417" expanded="true" signature="40778:40812" ph="..." />
-            <marker date="1533301958417" expanded="true" signature="40885:41029" ph="..." />
+            <marker date="1533461159292" expanded="true" signature="40801:40835" ph="..." />
+            <marker date="1533461159292" expanded="true" signature="40908:41052" ph="..." />
           </folding>
         </state>
       </provider>
@@ -602,20 +675,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.dust">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
+        <state relative-caret-position="0">
           <caret line="189" column="105" lean-forward="false" selection-start-line="189" selection-start-column="105" selection-end-line="189" selection-end-column="105" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/paywithstellar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1151">
-          <caret line="250" column="15" lean-forward="false" selection-start-line="250" selection-start-column="11" selection-end-line="250" selection-end-column="15" />
-          <folding>
-            <marker date="1533301958417" expanded="true" signature="40778:40812" ph="..." />
-            <marker date="1533301958417" expanded="true" signature="40885:41029" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -635,9 +697,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/paywithstellar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="225" column="19" lean-forward="true" selection-start-line="225" selection-start-column="19" selection-end-line="225" selection-end-column="19" />
+          <folding>
+            <marker date="1533461159292" expanded="true" signature="40801:40835" ph="..." />
+            <marker date="1533461159292" expanded="true" signature="40908:41052" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/ipn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/payments.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
+        <state relative-caret-position="18">
           <caret line="46" column="50" lean-forward="false" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
           <folding>
             <marker date="1533390115603" expanded="true" signature="23298:23332" ph="..." />
@@ -648,16 +729,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/iotapayment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/ipn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="108">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
           <folding />
         </state>
       </provider>

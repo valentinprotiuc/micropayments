@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET pictures. */
 router.get('/:picId-:price', function (req, res, next) {
-    var fiatPrice = req.params.price;
+    var fiatPrice = "0.00001";
     var customStr = req.params.picId;
 
     request.post({

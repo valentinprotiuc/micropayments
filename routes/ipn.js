@@ -27,8 +27,12 @@ router.get('/:address', function (req, res) {
 
 /* Receives POST requests from PayIOTA with payment confirmation*/
 router.post('/', function (req, res) {
+    console.log("ipn received");
+    console.log("request: ", req);
     if(req.done === '1'){
+        console.log("tx confirmed");
         payments.push(req.address);
+        console.log("after push: ", payments);
         res.end();
     } else {
         res.end();
