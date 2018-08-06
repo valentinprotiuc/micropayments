@@ -5,6 +5,7 @@ var adaro = require('adaro');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+
 var indexRouter = require('./routes/index');
 var picturesRouter = require('./routes/pictures');
 var iotapaymentRouter = require('./routes/iotapayment');

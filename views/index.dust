@@ -95,7 +95,7 @@
                     </label>
                 </div>
                 <br>
-                <p>Price: $ <span id="price1">0.0</span></p>
+                <p>Price: $ <span id="price1">From 0.01</span></p>
                 <button class="payIota" onclick="check(event)">
                     <img class="paybutton" src="/images/pay_with_iota.png">
                 </button>
@@ -112,21 +112,21 @@
                 <p>Purchase format:</p>
                 <div class="form-check-inline">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optradio" id="blue_small" value="0.01">Small(1232x816)
+                        <input type="radio" class="form-check-input" name="optradio" id="blue_small" value="0.001">Small(1232x816)
                     </label>
                 </div>
                 <div class="form-check-inline">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optradio" id="blue_medium" value="0.02">Medium(2464x1632)
+                        <input type="radio" class="form-check-input" name="optradio" id="blue_medium" value="0.002">Medium(2464x1632)
                     </label>
                 </div>
                 <div class="form-check-inline">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optradio" id="blue_large" value="0.03">Large(4928x3264)
+                        <input type="radio" class="form-check-input" name="optradio" id="blue_large" value="0.003">Large(4928x3264)
                     </label>
                 </div>
                 <br>
-                <p>Price: $ <span id="price2">0.0</span></p>
+                <p>Price: $ <span id="price2">From 0.001</span></p>
                 <button class="payIota" onclick="check(event)">
                     <img class="paybutton" src="/images/pay_with_iota.png">
                 </button>
@@ -143,21 +143,21 @@
                 <p>Purchase format:</p>
                 <div class="form-check-inline">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optradio" id="bench_small" value="0.01">Small(1232x816)
+                        <input type="radio" class="form-check-input" name="optradio" id="bench_small" value="0.0001">Small(1232x816)
                     </label>
                 </div>
                 <div class="form-check-inline">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optradio" id="bench_medium" value="0.02">Medium(2464x1632)
+                        <input type="radio" class="form-check-input" name="optradio" id="bench_medium" value="0.0002">Medium(2464x1632)
                     </label>
                 </div>
                 <div class="form-check-inline">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optradio" id="bench_large" value="0.03">Large(4928x3264)
+                        <input type="radio" class="form-check-input" name="optradio" id="bench_large" value="0.0003">Large(4928x3264)
                     </label>
                 </div>
                 <br>
-                <p>Price: $ <span id="price3">0.0</span></p>
+                <p>Price: $ <span id="price3">From 0.0001</span></p>
                 <button class="payIota" onclick="check(event)">
                     <img class="paybutton" src="/images/pay_with_iota.png">
                 </button>
@@ -179,12 +179,12 @@
             <h4 class="modal-title">IOTA payment details</h4>
           </div>
           <div class="modal-body">
-            <p>Please send payment of <span id="iotaPrice"></span> IOTA to the address below and include the following code as a message: <span id="iotaConfId"></span> </p>
+            <p>Please send payment of <span id="iotaPrice"></span> IOTA to the address below.</p>
             <br>
             <span class="payAddress" id="iotaAddress"></span>
             <div class="qrdiv" id="qr"></div>
             <br>
-            <p>Note that payments with IOTA take usually up to 2 minutes. After payment is sent, please wait for confirmation.</p>
+            <p>After the payment is sent, please don't close this window but wait for download to start.</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal" onclick="abortCurrentReq()">Cancel</button>

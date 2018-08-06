@@ -6,8 +6,11 @@ function requestPicture(refId) {
     window.open(reqUrl);
 }
 
-function requestConfirmation(address, refId) {
-    var reqUrl = "/ipn/" + address;
+function requestConfirmation(address, refId, iotaPrice) {
+
+
+
+    var reqUrl = "/ipn/" + address + "-" + iotaPrice;
     currentReq = $.ajax({
         url: reqUrl,
         beforeSend : function()    {
@@ -18,6 +21,10 @@ function requestConfirmation(address, refId) {
         success: function () {
             $('#myModal').modal('toggle');
             requestPicture(refId);
+        },
+        error: function () {
+            $('#myModal').modal('toggle');
+            myOrderCancel(refId);
         }
     });
 }
@@ -28,23 +35,23 @@ function abortCurrentReq(){
 
 
 function createInvoiceIota(price, refId) {
-    console.log('creating invoice');
     var reqUrl = "/iotapayment/" + refId + "-" + price;
 
     //Request for invoice creation
    $.get(reqUrl , function (res) {
        var paymentAddress = res[0];
-       var iotaprice = res[1];
+       var iotaPrice = res[1];
 
        $('#qr').empty();
        new QRCode(document.getElementById('qr'), paymentAddress);
-       $('#iotaPrice').text(iotaprice);
-       $('#iotaConfId').text(refId);
+       $('#iotaPrice').text(iotaPrice);
        $('#iotaAddress').text(paymentAddress);
-       $('#myModal').modal();
+       $('#myModal').modal({
+           backdrop: 'static'
+       });
        
        //Request for a confirmation of the payment
-       requestConfirmation(paymentAddress, refId);
+       requestConfirmation(paymentAddress, refId, iotaPrice);
    }, 'json');
 }
 
@@ -56,10 +63,9 @@ function myOrderConfirm(refid, txid) {
     }
 }
 
-function myOrderCancel(refid) {
+function myOrderCancel() {
 
-    console.log("order canceled");
-    alert('Unfortunately your order has been canceled.');
+    alert('Order canceled.');
 }
 
 function check(event) {
@@ -91,8 +97,6 @@ window.onload = function () {
         onCancel: myOrderCancel
     };
     $('input[type=radio]').click(function () {
-
-        console.log(this.value);
 
         if (this.id === "blue_large" || this.id === "blue_medium" || this.id === "blue_small") {
             $('#price2').text(this.value);
