@@ -34,6 +34,9 @@
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/valentinprotiuc/micropayments">Project repo</a>
+            </li>
         </ul>
     </div>
 </nav>
@@ -45,6 +48,8 @@
             <h5>My photo:</h5>
             <img class="person" src="/images/DSC_0020_2.JPG">
             <p>Computer science student at <a href="https://www.uni-muenster.de/de/">WWU Münster</a>.</p>
+            <br>
+            <p>My GitHub <a href="https://github.com/valentinprotiuc">profile</a>.</p>
             <h3>Useful Links</h3>
             <p>Official sites of cryptos and exchange services:</p>
             <ul class="nav nav-pills flex-column">
