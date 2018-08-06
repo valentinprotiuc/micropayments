@@ -22,7 +22,7 @@ function requestConfirmation(address, refId, iotaPrice) {
             $('#myModal').modal('toggle');
             requestPicture(refId);
         },
-        error: function (e) {
+        error: function (r,s,e) {
             console.log(e);
             $('#myModal').modal('toggle');
             myOrderCancel(refId);
