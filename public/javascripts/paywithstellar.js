@@ -92,7 +92,13 @@ var PayWithStellar = (function(){
     }
 
     function showQrcode() {
-        new QRCode('xlm-qrcode', state.options.address);
+         var qrObject = {
+            'address': state.options.address,
+            'amount': state.amount,
+            'memoType': 'text',
+            'memo': state.refid
+        };
+        new QRCode('xlm-qrcode', JSON.stringify(qrObject));
     }
 
     function getTicker(update=false) {
