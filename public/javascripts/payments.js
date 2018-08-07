@@ -53,7 +53,7 @@ function createInvoiceIota(price, refId) {
        };
 
        $('#qr').empty();
-       new QRCode(document.getElementById('qr'), qrObject);
+       new QRCode(document.getElementById('qr'), JSON.stringify(qrObject));
        $('#iotaPrice').text(iotaPrice);
        $('#iotaAddress').text(paymentAddress);
        $('#myModal').modal({
