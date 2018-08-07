@@ -46,9 +46,14 @@ function createInvoiceIota(price, refId) {
    $.get(reqUrl , function (res) {
        var paymentAddress = res[0];
        var iotaPrice = res[1];
+       var qrObject = {
+           'address': paymentAddress,
+           'amount' : iotaPrice,
+           'message' : refId
+       };
 
        $('#qr').empty();
-       new QRCode(document.getElementById('qr'), paymentAddress);
+       new QRCode(document.getElementById('qr'), qrObject);
        $('#iotaPrice').text(iotaPrice);
        $('#iotaAddress').text(paymentAddress);
        $('#myModal').modal({
