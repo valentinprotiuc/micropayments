@@ -19,8 +19,8 @@ router.get('/:address-:price', function (req, res) {
 
     var searchValues = {'addresses': address};
 
-    req.on('canceled', function (){
-        res.end;
+    req.on('aborted', function (){
+        cancelRequest = true;
     });
 
     function check(){
