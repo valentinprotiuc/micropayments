@@ -20,6 +20,7 @@ router.get('/:address-:price', function (req, res) {
     var searchValues = {'addresses': address};
 
     req.on('close', function (){
+        console.log("client canceled");
         cancelRequest = true;
     });
 
