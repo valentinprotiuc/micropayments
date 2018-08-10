@@ -19,7 +19,7 @@ router.get('/:address-:price', function (req, res) {
 
     var searchValues = {'addresses': address};
 
-    req.on('abort', function (){
+    req.on('aborted', function (){
         res.end;
     });
 
