@@ -99,7 +99,7 @@ window.onload = function () {
     var options = {
         horizon: 'live',
         address: 'GAFA6RZDVDNTO77W3DQGXTFQCJ4FRDXO5QX23ADT4JONXE2IYA5V5EID',
-        currency: 'USD',
+        currency: 'EUR',
         onConfirm: myOrderConfirm,
         onCancel: myOrderCancel
     };
