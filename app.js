@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+//Endpoints
 app.use('/', indexRouter);
 app.use('/pictures/', picturesRouter);
 app.use('/iotapayment/', iotapaymentRouter);

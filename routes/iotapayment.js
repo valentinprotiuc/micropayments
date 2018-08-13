@@ -2,11 +2,11 @@ var express = require('express');
 var request = require('request');
 var router = express.Router();
 
-/* GET pictures. */
+/* Endpoint for IOTA invoice request */
 router.get('/:picId-:price', function (req, res, next) {
     var fiatPrice = req.params.price;
     var customStr = req.params.picId;
-
+    //Send request to PayIOTA server
     request.post({
         url: 'https://payiota.me/api.php',
         form: {

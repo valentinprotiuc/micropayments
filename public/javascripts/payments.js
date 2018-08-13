@@ -1,15 +1,17 @@
 var currentReq;
 
+//Get the picture from the server
 function requestPicture(refId) {
     alert('Thank you for your purchase!\nOrder ID: ' + refId);
     var reqUrl = '/pictures/' + refId;
     window.open(reqUrl);
 }
 
+//Get confirmation for IOTA payment
 function requestConfirmation(address, refId, iotaPrice) {
 
 
-
+    //Send request to own server endpoint "ipn"
     var reqUrl = "/ipn/" + address + "-" + iotaPrice;
     currentReq = $.ajax({
         url: reqUrl,
@@ -34,12 +36,14 @@ function requestConfirmation(address, refId, iotaPrice) {
     });
 }
 
+//Abort the payment request
 function abortCurrentReq(){
     currentReq.abort();
 }
 
-
+//Create address/price pair for IOTA payment
 function createInvoiceIota(price, refId) {
+    //Own server endpoint
     var reqUrl = "/iotapayment/" + refId + "-" + price;
 
     //Request for invoice creation
@@ -51,7 +55,7 @@ function createInvoiceIota(price, refId) {
            'amount' : iotaPrice,
            'message' : refId
        };
-
+        //Clean the QR modal
        $('#qr').empty();
        new QRCode(document.getElementById('qr'), JSON.stringify(qrObject));
        $('#iotaPrice').text(iotaPrice);
@@ -63,7 +67,7 @@ function createInvoiceIota(price, refId) {
    }, 'json');
 }
 
-
+//Execute on confirmation of Stellar payment
 function myOrderConfirm(refid, txid) {
     if (PayWithStellar.lastOrder() == refid) {
 
@@ -71,10 +75,12 @@ function myOrderConfirm(refid, txid) {
     }
 }
 
+
 function myOrderCancel() {
     alert('Order canceled.');
 }
 
+//Check which item was selected and which payment system
 function check(event) {
     var orderId = "";
     var price = 0.01;
@@ -94,7 +100,7 @@ function check(event) {
     }
 
 }
-
+//Create a PayWithStellar instance
 window.onload = function () {
     var options = {
         horizon: 'live',
