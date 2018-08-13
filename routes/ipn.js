@@ -20,7 +20,6 @@ router.get('/:address-:price', function (req, res) {
     var searchValues = {'addresses': address};
 
     req.on('close', function (){
-        console.log("client canceled");
         cancelRequest = true;
     });
 
@@ -32,8 +31,15 @@ router.get('/:address-:price', function (req, res) {
                     console.error("error: ", error);
                 } else {
                     if(success.length > 0){
+                        console.log(success);
                         if(success[0].value >= parseInt(req.params.price)){
-                            res.send(true);
+                            var senderBalance = getSenderAddress(iota, success[0].bundle);
+                            if(parseInt(senderBalance) >= req.params.price){
+                                res.send(true);
+                            }else{
+                                console.log("The payer has no funds.");
+                                res.end();
+                            }
                         } else {
                             res.end();
                         }
@@ -50,70 +56,30 @@ router.get('/:address-:price', function (req, res) {
     }
     check();
 
-
-
-
-
-
-    /*
-        var command = {
-            'command': 'findTransactions',
-            'addresses': ['KEXTUBVRIMFAQPHW9PNQKCZFW9SBKCDYFH9LEQXMIZLCMUKGLNZWWJIOVSRLCQHZHCIOVFYOELRGMZN9XGUWYMKITW']
-        };
-
-        var options = {
-            url: 'http://173.249.16.50:14265',
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-IOTA-API-Version': '1',
-                'Content-Length': Buffer.byteLength(JSON.stringify(command))
-            },
-            json: command
-        };
-
-        console.log("reqqq");
-        request(options, function (error, response, data) {
-            if (!error && response.statusCode == 200) {
-                console.log(data);
-            } else {
-                console.log(response);
-            }
-        });
-
-
-        /*var cancelRequest = false;
-
-        req.on('close', function (err){
-            cancelRequest = true;
-        });
-
-        //Waiting function for the confirmation
-        function check(){
-            setTimeout(function () {
-                if(payments.includes(req.params.address)){
-                    res.send(true);
-                } else if(cancelRequest === false) {
-                    check();
-                }
-            },500);
-        }
-        check();*/
-
 });
 
-/* Receives POST requests from PayIOTA with payment confirmation
-router.post('/', function (req, res) {
-    console.log("ipn received");
-    console.log("request: ", req);
-    if(req.done === '1'){
-        console.log("tx confirmed");
-        payments.push(req.address);
-        console.log("after push: ", payments);
-        res.end();
-    } else {
-        res.end();
-    }
-});*/
-
 module.exports = router;
+
+function getSenderAddress(iota, bundleHash){
+    var bundles =[];
+    bundles.push(bundleHash);
+    var searchValues = {'bundles': bundles};
+    iota.api.findTransactionObjects(searchValues, function(error, success) {
+        console.log("Bundle: " , success);
+        for(i=0;i<success.length;i++){
+            if(success[i].value < 0){
+                return getSenderBalance(iota, success[i].address);
+            }
+        }
+    });
+
+}
+
+function getSenderBalance(iota, address) {
+    var senderAddress = [];
+    senderAddress.push(address);
+    iota.api.getBalances(senderAddress, 100, function(error, success) {
+        console.log("Balance: ", success.balances);
+        return success.balances;
+    });
+}
